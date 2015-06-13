@@ -1,0 +1,165 @@
+.login-form {
+  text-align: center;
+  width: 80%;
+  margin: 360px auto 0;
+}
+
+input[type=email], input[type=password] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.login-button {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  display: block;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+}
+
+//Searching CSS
+.tab {
+  line-height: 1;
+}
+
+.tab-icon {
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-label {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.person-list {
+  border-top: none;
+}
+
+.person {
+  line-height: 1;
+}
+
+.person-list-header {
+  opacity: 0.6;
+}
+
+.person-name {
+  line-height: 44px;
+}
+
+.person-image {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+//cards
+.reply-notification {
+  position: absolute;
+  right: 18px;
+  top: 28px;
+  font-size: 10px;
+  font-weight: 600;
+  height: 13px;
+  line-height: 13px;
+  padding: 0 4px;
+  min-width: 13px;
+}
+
+.tab-icon {
+  font-size: 28px;
+  vertical-align: -4px;
+}
+
+.timeline {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.timeline-li {
+  line-height: 1;
+  padding: 10px;
+}
+
+.timeline-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.timeline-date {
+  float: right;
+  font-size: 12px;
+  opacity: 0.35;
+}
+
+.timeline-from {
+  margin: 10px 0 6px 0;
+}
+
+.timeline-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.timeline-id {
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.timeline-message {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.15;
+}
+
+//settings
+.profile-wrapper {
+  padding: 16px 10px 0 10px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: inset 1px rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+  font-size: 18px;
+  padding: 4px 0 2px 0;
+}
+
+.profile-email {
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+.switch--list-item {
+  margin-right: 0px;
+}
+
+.settings-header {
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.4;
+  padding: 10px 0 0px 10px;
+  margin-bottom: -4px;
+}
+
+.settings-list {
+  margin-top: 10px;
+}

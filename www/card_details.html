@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        ons.bootstrap();
+    </script>
+    
+    <script>
+var module = ons.bootstrap();
+module.controller('AppController', function($scope) {
+  ons.createPopover('popover.html').then(function(popover) {
+    $scope.popover = popover;
+  });
+  
+  $scope.show = function(e) {
+    $scope.popover.show(e);
+  };
+});
+</script>
+</head>
+<body>
+    <ons-page ng-controller="AppController">
+        <ons-toolbar fixed-style>
+          <div class="left">
+            <ons-toolbar-button>
+              <a href="main.html"><ons-icon icon="chevron-left" fixed-width="false" style="vertical-align: -4px;color:#039be5;"> Back</ons-icon></a>
+            </ons-toolbar-button>
+          </div>
+          <div class="center">
+            Card Details
+          </div>
+          <div class="right">
+            <ons-toolbar-button>
+              <a href="searchcard.html"><ons-icon icon="search" fixed-width="false" style="vertical-align: -4px;color:#039be5;"></ons-icon></a>
+            </ons-toolbar-button>
+          </div>
+        </ons-toolbar>
+    
+    <div style="margin-top:20px">
+        <ons-row>
+        <ons-col width="8%"></ons-col>
+            <ons-col>
+                <img src="img/cards/watson-card300.png" style="width:300px;">
+            </ons-col>
+            <ons-col width="8%"></ons-col>
+        </ons-row>
+        
+        <ons-row>
+        <ons-col width="8%"></ons-col>
+            <ons-col>
+                <h3 style="text-align:center;">WATSON</h3>
+            </ons-col>
+            <ons-col width="8%"></ons-col>
+        </ons-row>
+            
+                        <ons-row>
+        <ons-col width="20%"></ons-col>
+            <ons-col>
+                <img src="img/barcode220.png">
+            </ons-col>
+            <ons-col width="20%"></ons-col>
+        </ons-row>
+        </div>
+        
+        <div   style="text-align: center">
+        <ons-row>
+        <ons-col>
+            <ons-button id="button" ng-click="show('#button')">NEARBY</ons-button>
+        </ons-col>
+        </ons-row></div>
+    </ons-page>
+    
+<script type="text/ons-template" id="popover.html">
+  <ons-popover cancelable>
+    <img src="img/map300.png" width="230px">
+  </ons-popover>
+</script>
+</body>
+</html>
